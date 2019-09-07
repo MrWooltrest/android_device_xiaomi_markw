@@ -82,6 +82,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libmmcamera2_stats_modules.so',
         .add_needed('libcamshim.so')
         .remove_needed('libandroid.so')
+        .replace_needed('libgui.so', 'libwui.so')
         .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/')
         .binary_regex_replace(b'persist.camera.debug.logfile', b'persist.vendor.camera.dbglog'),
 
