@@ -19,6 +19,10 @@ service vendor.goodix_script /vendor/bin/init.goodix.sh
     group system
     oneshot
 
+# FM
+on property:hw.fm.init=*
+    write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
+
 # USB
 on property:ro.product.vendor.model=*
     setprop vendor.usb.product_string ${ro.product.vendor.model}
