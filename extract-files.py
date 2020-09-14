@@ -124,6 +124,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/hw/fingerprint.goodix.so': blob_fixup()
         .add_needed('fakelogprint.so')
+        .remove_needed('libandroid_runtime.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/gxfingerprint.default.so': blob_fixup()
         .add_needed('fakelogprint.so')
