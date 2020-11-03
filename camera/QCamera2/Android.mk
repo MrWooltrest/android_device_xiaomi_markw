@@ -119,6 +119,8 @@ endif
 
 LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
 
+LOCAL_HEADER_LIBRARIES += libandroid_sensor_headers
+
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_VENDOR_MODULE := true
