@@ -37,9 +37,6 @@
 # Relabel it to QCOM's sysfs_mmc_host label to get rid of denials
 /sys/devices(/platform)?/soc/[a-f0-9]+.sdhci/mmc_host/mmc[0-9]/mmc[0-9]:[a-f0-9]+/block/mmcblk[0-9]/queue/read_ahead_kb u:object_r:sysfs_mmc_host:s0
 
-# Ir
-/dev/lirc[0-9]*                                 u:object_r:lirc_device:s0
-
 # Legacy root dirs
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
