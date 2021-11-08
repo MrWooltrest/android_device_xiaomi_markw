@@ -153,9 +153,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Consumerir
+# ConsumerIr
 PRODUCT_PACKAGES += \
-    android.hardware.ir-service.xiaomi
+    android.hardware.ir-service.example
 
 # Display
 PRODUCT_PACKAGES += \
