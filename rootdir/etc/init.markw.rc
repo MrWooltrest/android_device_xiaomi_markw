@@ -7,6 +7,11 @@ on post-fs-data
     # Create folder for mm-qcamera-daemon
     mkdir /data/vendor/qcam/ 0770 camera camera
 
+# Restart camera provider after vendor.qcamerasvr is running
+on property:init.svc.vendor.qcamerasvr=running
+    exec /bin/sleep 1s
+    restart vendor.camera-provider-2-4
+
 # Fingerprint
 service vendor.goodix_script /vendor/bin/init.goodix.sh
     class late_start
