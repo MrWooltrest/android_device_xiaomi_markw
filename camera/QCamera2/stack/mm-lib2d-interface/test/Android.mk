@@ -1,3 +1,4 @@
+ifeq (0,1)
 #lib2d sample test
 OLD_LOCAL_PATH := $(LOCAL_PATH)
 MM_LIB2D_TEST_PATH := $(call my-dir)
@@ -35,3 +36,4 @@ LOCAL_SHARED_LIBRARIES := libcutils libdl libmmlib2d_interface
 include $(BUILD_EXECUTABLE)
 
 LOCAL_PATH := $(OLD_LOCAL_PATH)
+endif

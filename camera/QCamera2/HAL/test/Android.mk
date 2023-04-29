@@ -1,3 +1,4 @@
+ifeq (0,1)
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -56,3 +57,4 @@ endif
 endif
 
 #include $(BUILD_EXECUTABLE)
+endif
