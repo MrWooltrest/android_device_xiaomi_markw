@@ -113,7 +113,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912 # /cust
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/xiaomi_touchscreen/enable_dt2w"
 TARGET_USES_INTERACTION_BOOST := true
 
 # Platform
