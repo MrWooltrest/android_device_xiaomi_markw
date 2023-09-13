@@ -40,6 +40,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     # Camera
     'vendor/bin/mm-qcamera-daemon': blob_fixup()
+        .add_needed('libc_mutexdestroy_shim.so')
+        .add_needed('libc_pthreadts_shim.so')
         .binary_regex_replace(b'/data/misc/camera/cam_socket', b'/data/vendor/qcam/cam_socket'),
 
     ('vendor/lib/libmmcamera2_cpp_module.so',
