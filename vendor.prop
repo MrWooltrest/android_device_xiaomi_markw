@@ -104,9 +104,10 @@ net.tcp.2g_init_rwnd=10
 
 # USB
 sys.usb.mtp.batchcancel=1
+vendor.usb.controller=7000000.dwc3
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=1
-vendor.usb.use_gadget_hal=0
+vendor.usb.use_gadget_hal=1
 
 # Wifi-Display
 persist.sys.wfd.virtual=0
