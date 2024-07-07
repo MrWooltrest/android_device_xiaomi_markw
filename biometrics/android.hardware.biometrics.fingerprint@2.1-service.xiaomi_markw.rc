@@ -46,6 +46,7 @@ on init
     chown system system /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
 
+    setprop ro.boot.product.hardware.sku fingerprint
     setprop persist.sys.fp.vendor none
     setprop persist.sys.fp.onstart 0
     setprop ro.vendor.fingerprint.ready 1
@@ -63,9 +64,6 @@ on property:persist.sys.fp.vendor=switchf && property:ro.vendor.fingerprint.read
 on property:persist.sys.fp.vendor=goodix && property:persist.sys.fp.onstart=1 && property:ro.vendor.fingerprint.ready=1
     setprop ro.hardware.fingerprint goodix
     enable vendor.fps_hal
-
-on property:ro.vendor.fingerprint.succeed=1
-    setprop ro.boot.product.hardware.sku fingerprint
 
 on property:ro.vendor.fingerprint.failed=1
     stop vendor.fps_hal
