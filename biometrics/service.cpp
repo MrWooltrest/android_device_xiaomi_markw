@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service"
 
 #include <android/log.h>
 #include <android-base/file.h>
@@ -22,8 +22,8 @@
 #include <binder/ProcessState.h>
 #include <hidl/HidlSupport.h>
 #include <hidl/HidlTransportSupport.h>
-#include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
-#include <android/hardware/biometrics/fingerprint/2.1/types.h>
+#include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
+#include <android/hardware/biometrics/fingerprint/2.2/types.h>
 #include "BiometricsFingerprint.h"
 #include "gf_ioctl.h"
 #include <errno.h>
@@ -34,8 +34,8 @@ bool use_cancel_hack = true;
 
 static constexpr char kGoodixFpDev[] = "/dev/goodix_fp";
 
-using android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
-using android::hardware::biometrics::fingerprint::V2_1::implementation::BiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 using android::sp;
