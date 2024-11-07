@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "CustomROMsOverlay_oxygen",
-    sdk_version: "current",
-    vendor: true,
-}
