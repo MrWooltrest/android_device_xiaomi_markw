@@ -73,8 +73,6 @@ TARGET_SUPPORT_HAL1 := false
 
 # Display
 TARGET_SCREEN_DENSITY := 420
-TARGET_USES_ION := true
-TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 
 # Filesystem
@@ -103,6 +101,9 @@ DEVICE_MATRIX_FILE   := hardware/qcom-caf/common/compatibility_matrix.xml
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
+
+# Media
+TARGET_USES_ION := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
