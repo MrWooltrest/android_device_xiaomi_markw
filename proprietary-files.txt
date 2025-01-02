@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
+# All unpinned blobs are extracted from markw-user 6.0.1 MMB29M V10.2.2.0.MBEMIXM release-keys
 
 # Current blobs with ELF checks disabled:
 # libcne, libwqe, imsdatadaemon, lowi-server depend on libwpa_client, which is a gnu makefile target
@@ -75,7 +75,7 @@ vendor/lib64/libsoc_helper.so|affbc1cc49d3df3a6e174a21bf3fe79c7130d1c0
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|25b2ce43c28c274b15c3b683831c214e3efb531d
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|117b74f1df4ee67297f431ae47d622bbb8f587ca
 
-# Camera
+# Camera - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 vendor/lib/libChamomilePA.so
 vendor/lib/libchromaflash.so
@@ -216,7 +216,7 @@ vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
 vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 
-# Camera actuators
+# Camera actuators - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9763_ofilm_imx258.so
 vendor/lib/libactuator_dw9763_qtech_imx258.so
@@ -226,7 +226,7 @@ vendor/lib/libactuator_lc898212xd_qc2002.so
 vendor/lib/libactuator_ofilm_dw9763.so
 vendor/lib/libactuator_pseudo.so
 
-# Camera chromatix
+# Camera chromatix - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -643,7 +643,7 @@ vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so
 vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k5e8_sunny_zsl_video_3a.so
 
-# Camera configs
+# Camera configs - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml
 etc/camera/csidtg_camera.xml:vendor/etc/camera/csidtg_camera.xml
 etc/camera/csidtg_chromatix.xml:vendor/etc/camera/csidtg_chromatix.xml
@@ -665,7 +665,7 @@ etc/camera/s5k5e8_ofilm_chromatix.xml:vendor/etc/camera/s5k5e8_ofilm_chromatix.x
 etc/camera/s5k5e8_qtech_chromatix.xml:vendor/etc/camera/s5k5e8_qtech_chromatix.xml
 etc/camera/s5k5e8_sunny_chromatix.xml:vendor/etc/camera/s5k5e8_sunny_chromatix.xml
 
-# Camera firmware
+# Camera firmware - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 etc/firmware:vendor/firmware/cpp_firmware_v1_5_0.fw
 
 # Charger - from LA.UM.9.6.2.r1-04200-89xx.0
@@ -755,7 +755,7 @@ vendor/etc/init/android.hardware.drm-service.widevine.rc|54c79ef531c9c135fa234a8
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml|7e13b6628572b1cdd76351b744e2805d4e6f2dd9
 vendor/lib/libwvaidl.so|feb2fb9bd4207f401fd0266bfb06722cb881aa4f
 
-# Fingerprint
+# Fingerprint - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 bin/gx_fpd:vendor/bin/gx_fpd
 lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so;FIX_SONAME
 lib64/hw/fingerprint.searchf.so:vendor/lib64/hw/fingerprint.searchf.so

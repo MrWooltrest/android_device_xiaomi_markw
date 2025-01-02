@@ -72,7 +72,7 @@
         </activity>
 
         <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
+                 android:permission="XiaomarkwzeService">
         </service>
 
         <activity

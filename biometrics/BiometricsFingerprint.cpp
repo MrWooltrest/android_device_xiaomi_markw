@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_mido"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_markw"
 
 #include <hardware/hw_auth_token.h>
 
