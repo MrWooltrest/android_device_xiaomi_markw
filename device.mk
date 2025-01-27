@@ -276,6 +276,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnbaio
 
+# Mountpoint
+PRODUCT_PACKAGES += \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
