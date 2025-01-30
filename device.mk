@@ -185,8 +185,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    FMRadio
 
 # Fwk-detect
 PRODUCT_PACKAGES += \
