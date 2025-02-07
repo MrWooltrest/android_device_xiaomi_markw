@@ -187,6 +187,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio
 
+$(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
+
 # Fwk-detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor
