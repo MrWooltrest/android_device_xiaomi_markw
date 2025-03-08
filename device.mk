@@ -362,7 +362,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     libcld80211:64 \
-    libwpa_client:64 \
     hostapd \
     libwifi-hal-qcom:64 \
     WifiOverlay \
