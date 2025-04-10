@@ -194,9 +194,9 @@ vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 
 # Camera actuators
-vendor/lib/libactuator_bu64244gwz.so
-vendor/lib/libactuator_bu64291gwz.so
-vendor/lib/libactuator_dw9763.so
+vendor/lib/libactuator_bu64244gwz.so;DISABLE_CHECKELF
+vendor/lib/libactuator_bu64291gwz.so;DISABLE_CHECKELF
+vendor/lib/libactuator_dw9763.so;DISABLE_CHECKELF
 
 # Camera chromatix
 vendor/lib/libchromatix_csidtg_common.so;DISABLE_CHECKELF
