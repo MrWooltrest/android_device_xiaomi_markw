@@ -42,8 +42,11 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/mm-qcamera-daemon': blob_fixup()
         .binary_regex_replace(b'/data/misc/camera/cam_socket', b'/data/vendor/qcam/cam_socket'),
 
+    'vendor/lib/libmmcamera_dbg.so': blob_fixup()
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/')
+        .binary_regex_replace(b'persist.camera.debug.logfile', b'persist.vendor.camera.dbglog'),
+
     'vendor/lib/libmmcamera2_sensor_modules.so': blob_fixup()
-        .add_needed('liblog.so')
         .binary_regex_replace(b'/system/etc/camera', b'/vendor/etc/camera')
         .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
 
@@ -52,67 +55,30 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('libandroid.so')
         .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
 
-    ('vendor/lib/libmmcamera_pdaf.so',
-    'vendor/lib/libmmcamera_pdafcamif.so',
-    'vendor/lib/vendor/lib/libmmcamera_tintless_bg_pca_algo.so'): blob_fixup()
-        .add_needed('liblog.so')
-        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
-
-    'vendor/lib/vendor/lib/libmmcamera_hdr_gb_lib.so': blob_fixup()
-        .add_needed('liblog.so')
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-
     ('vendor/lib/libmmcamera2_cpp_module.so',
     'vendor/lib/libmmcamera2_dcrf.so',
     'vendor/lib/libmmcamera2_iface_modules.so',
     'vendor/lib/libmmcamera2_imglib_modules.so',
     'vendor/lib/libmmcamera2_mct.so',
     'vendor/lib/libmmcamera2_pproc_modules.so',
-    'vendor/lib/libmmcamera2_q3a_core.so',
+    'vendor/lib/libmmcamera2_q3a_core.so'
     'vendor/lib/libmmcamera2_stats_algorithm.so',
     'vendor/lib/libmmcamera_imglib.so',
-    'vendor/lib/libmmcamera_tintless_algo.so'): blob_fixup()
+    'vendor/lib/libmmcamera_pdafcamif.so',
+    'vendor/lib/libmmcamera_pdaf.so',
+    'vendor/lib/libmmcamera_tintless_algo.so',
+    'vendor/lib/libmmcamera_tintless_bg_pca_algo.so',
+    'vendor/lib/libmmcamera_tuning.so'): blob_fixup()
         .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
-
-    # Camera - Property fixup
-    'vendor/lib/libmmcamera_dbg.so': blob_fixup()
-        .add_needed('liblog.so')
-        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/')
-        .binary_regex_replace(b'persist.camera.debug.logfile', b'persist.vendor.camera.dbglog'),
 
     # Camera - libstdc++.so => libstdc++_vendor.so
-    ('vendor/lib/liboptizoom.so',
+    ('vendor/lib/libchromaflash.so',
+    'vendor/lib/libmmcamera_hdr_gb_lib.so',
+    'vendor/lib/liboptizoom.so',
     'vendor/lib/libseemore.so',
     'vendor/lib/libtrueportrait.so',
-    'vendor/lib/libubifocus.so',
-    'vendor/lib/libchromaflash.so'): blob_fixup()
+    'vendor/lib/libubifocus.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-
-    'vendor/lib/libmmcamera_ppeiscore.so': blob_fixup()
-        .add_needed('libppeiscore_shim.so')
-        .replace_needed('libGLESv2.so', 'libGLESv2_adreno.so'),
-    'vendor/lib/libmmcamera_tuning.so': blob_fixup()
-        .remove_needed('libmm-qcamera.so')
-        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
-    'vendor/lib/libmpbase.so': blob_fixup()
-        .add_needed('libcamshim.so')
-        .remove_needed('libandroid.so')
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-
-    # Camera - liblog dep.
-    ('vendor/lib/libmmcamera_imx258_mono.so',
-    'vendor/lib/libjpegehw.so',
-    'vendor/lib/libjpegdhw.so',
-    'vendor/lib/libmmcamera_imx258_ofilm.so',
-    'vendor/lib/libmmcamera_imx258_sunny.so',
-    'vendor/lib/libjpegdmahw.so',
-    'vendor/lib/libmmcamera_imx258.so',
-    'vendor/lib/libmmcamera_imx258_qtech.so',
-    'vendor/lib/libmmcamera_le2464c_master_eeprom.so',
-    'vendor/lib/libqomx_jpegenc.so',
-    'vendor/lib/libqomx_jpegdec.so',
-    'vendor/lib/libqomx_jpegenc_pipe.so'): blob_fixup()
-        .add_needed('liblog.so'),
 
     # Fingerprint
     'vendor/bin/gx_fpd': blob_fixup()
