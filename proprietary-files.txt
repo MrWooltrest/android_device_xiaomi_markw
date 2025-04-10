@@ -642,27 +642,18 @@ vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so|187678b91cafdc9dc16d375fb13d579
 vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview_3a.so|260db041d1f04e7c50dc99c7ff8c62aa385efc22
 vendor/lib/libchromatix_s5k5e8_sunny_zsl_video_3a.so|33775483513a539cb5db91d663b536579683c6c8
 
-# Camera configs - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
-etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml|600e836e5322deb90a7eefd48684844b914cddc3
-etc/camera/csidtg_camera.xml:vendor/etc/camera/csidtg_camera.xml|406e2dec13dc910415ff72fc5a7ee084c97ab61f
-etc/camera/csidtg_chromatix.xml:vendor/etc/camera/csidtg_chromatix.xml|e95fad08db854906529b4df3c1b238ebbb36b2df
-etc/camera/imx258_bear_chromatix.xml:vendor/etc/camera/imx258_bear_chromatix.xml|211a55da57e93c555e12f4199ed480c068a166e4
-etc/camera/imx258_chromatix.xml:vendor/etc/camera/imx258_chromatix.xml|6f0e002d69a90e5e1b6c2499ad0d4218bf484f10
-etc/camera/imx258_mono_bear_chromatix.xml:vendor/etc/camera/imx258_mono_bear_chromatix.xml|81de051d0813deb56eb522e8e7cb1edbe9ee3afb
-etc/camera/imx258_mono_chromatix.xml:vendor/etc/camera/imx258_mono_chromatix.xml|382cffbb90ef8ed163b81d59b4a87b6649fb86e5
-etc/camera/imx258_ofilm_chromatix.xml:vendor/etc/camera/imx258_ofilm_chromatix.xml|b46ceb5670859d944c070ffe52702d1c0d6025e6
-etc/camera/imx258_qtech_chromatix.xml:vendor/etc/camera/imx258_qtech_chromatix.xml|f7cc3aa032109f3681f07c618bbdf31988c59162
-etc/camera/imx258_sunny_chromatix.xml:vendor/etc/camera/imx258_sunny_chromatix.xml|da2c6188209269d43abc660a6abcdda057eb2558
-etc/camera/ov13855_qtech_chromatix.xml:vendor/etc/camera/ov13855_qtech_chromatix.xml|5b6f325d6a145bcf660a8e7b1b7918f27db23652
-etc/camera/s5k3l8_chromatix.xml:vendor/etc/camera/s5k3l8_chromatix.xml|12a25c34405627b123bc4fadb0b52d4e060b73eb
-etc/camera/s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/s5k3l8_f3l8yam_chromatix.xml|9e76a64172d08e44b8053edc0d7d17c6c8db9e99
-etc/camera/s5k3l8_mono_chromatix.xml:vendor/etc/camera/s5k3l8_mono_chromatix.xml|be918217ff8a8ec72ea381913208680440c51e52
-etc/camera/s5k3l8_ofilm_chromatix.xml:vendor/etc/camera/s5k3l8_ofilm_chromatix.xml|a9bcdb0bbfd2095130c391d465f75f016fe75ed4
-etc/camera/s5k3l8_qtech_chromatix.xml:vendor/etc/camera/s5k3l8_qtech_chromatix.xml|7158755431febf429df362b5417843af645eb3c7
-etc/camera/s5k3l8_sunny_chromatix.xml:vendor/etc/camera/s5k3l8_sunny_chromatix.xml|0de902e3349b1c735bf253e2f403112936c71b84
-etc/camera/s5k5e8_ofilm_chromatix.xml:vendor/etc/camera/s5k5e8_ofilm_chromatix.xml|29daefe7c00c854a12e7d40377be3a9825b8c7fb
-etc/camera/s5k5e8_qtech_chromatix.xml:vendor/etc/camera/s5k5e8_qtech_chromatix.xml|0b98df8b2ecc147970309a1fd8d7c2ff3ea7c8c9
-etc/camera/s5k5e8_sunny_chromatix.xml:vendor/etc/camera/s5k5e8_sunny_chromatix.xml|145fe425825569f76f1adaa5fa84d88248d5ceb5
+# Camera configs
+etc/camera/csidtg_camera.xml:vendor/etc/camera/csidtg_camera.xml
+etc/camera/csidtg_chromatix.xml:vendor/etc/camera/csidtg_chromatix.xml
+etc/camera/msm8953_camera.xml:vendor/etc/camera/msm8953_camera.xml
+etc/camera/ofilm_s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/ofilm_s5k3l8_f3l8yam_chromatix.xml
+etc/camera/ov5670_f5670bq_chromatix.xml:vendor/etc/camera/ov5670_f5670bq_chromatix.xml
+etc/camera/qtech_ov5670_f5670bq_chromatix.xml:vendor/etc/camera/qtech_ov5670_f5670bq_chromatix.xml
+etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml
+etc/camera/s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/s5k3l8_f3l8yam_chromatix.xml
+etc/camera/s5k4h8_chromatix.xml:vendor/etc/camera/s5k4h8_chromatix.xml
+etc/camera/s5k5e8_chromatix.xml:vendor/etc/camera/s5k5e8_chromatix.xml
+etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml
 
 # Camera firmware - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 etc/firmware:vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
