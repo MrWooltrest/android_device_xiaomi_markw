@@ -215,15 +215,10 @@ vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
 vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 
-# Camera actuators - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
-vendor/lib/libactuator_dw9763.so|aefee92ff54da4173b8b3038fed882836cf456c6
-vendor/lib/libactuator_dw9763_ofilm_imx258.so|af76e5c29b925398ced73edaf41bc24d410d268c
-vendor/lib/libactuator_dw9763_qtech_imx258.so|35c1333d2d48f36593f1041ca835527d4c24fd1d
-vendor/lib/libactuator_dw9763_qtech_ov13855.so|fd85b21c0c806e659f389a49533cd227e1056d34
-vendor/lib/libactuator_dw9763_sunny_imx258.so|5c1a037001d22fc5e5299e46a75a6a4c29fd08f6
-vendor/lib/libactuator_lc898212xd_qc2002.so|ff5a7573549476f1e627285837ec88a193853efe
-vendor/lib/libactuator_ofilm_dw9763.so|1c6fdc8e88edae9c29e8dc7f9e36104a144ce1a8
-vendor/lib/libactuator_pseudo.so|7b249a4d554965da860cc4a9f37133cca9a8aad8
+# Camera actuators
+vendor/lib/libactuator_bu64244gwz.so
+vendor/lib/libactuator_bu64291gwz.so
+vendor/lib/libactuator_dw9763.so
 
 # Camera chromatix - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 vendor/lib/libchromatix_csidtg_common.so|bc517316ba56048c3e43578a02678f0139644a45
