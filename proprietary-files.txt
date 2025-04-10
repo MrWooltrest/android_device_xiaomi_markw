@@ -655,8 +655,8 @@ etc/camera/s5k4h8_chromatix.xml:vendor/etc/camera/s5k4h8_chromatix.xml
 etc/camera/s5k5e8_chromatix.xml:vendor/etc/camera/s5k5e8_chromatix.xml
 etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml
 
-# Camera firmware - from xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
-etc/firmware:vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
+# Camera firmware
+etc/firmware/cpp_firmware_v1_5_0.fw:vendor/firmware/cpp_firmware_v1_5_0.fw
 
 # Charger - from LA.UM.9.6.2.r1-04200-89xx.0
 vendor/bin/hvdcp_opti|d160d2193640a21b7eff70425bcdbfc775063cd5
