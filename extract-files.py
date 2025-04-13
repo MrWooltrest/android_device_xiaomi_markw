@@ -50,7 +50,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libmmcamera2_imglib_modules.so',
     'vendor/lib/libmmcamera2_mct.so',
     'vendor/lib/libmmcamera2_pproc_modules.so',
-    'vendor/lib/libmmcamera2_q3a_core.so'
+    'vendor/lib/libmmcamera2_q3a_core.so',
     'vendor/lib/libmmcamera2_stats_algorithm.so',
     'vendor/lib/libmmcamera_imglib.so',
     'vendor/lib/libmmcamera_tintless_algo.so'): blob_fixup()
