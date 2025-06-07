@@ -4,17 +4,13 @@
 # Camera
 /data/vendor/qcam(/.*)?                         u:object_r:vendor_camera_data_file:s0
 
-# Glove Mode
-/sys/class/tp_glove/device(/.*)?		  u:object_r:proc_touchpanel:s0
-/sys/devices/virtual/tp_glove(/.*)?		  u:object_r:proc_touchpanel:s0
-
 # Graphics Libs
 /vendor/lib(64)?/libadreno_app_profiles\.so    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpudataproducer\.so        u:object_r:same_process_hal_file:s0
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal-service\.qti\.xiaomi_markw                    u:object_r:hal_thermal_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_markw                        u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.xiaomi                                   u:object_r:hal_lineage_touch_default_exec:s0
 
 # I/O
 # This node is already labelled by QCOM but Lineage overrides it with sysfs_io_sched_tunable label

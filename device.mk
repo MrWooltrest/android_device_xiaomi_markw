@@ -333,9 +333,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti.xiaomi_markw
 
-# Touch features
+# Touch HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_markw
+    vendor.lineage.touch-service.xiaomi
+
+$(call soong_config_set,XIAOMI_TOUCH,KEY_DISABLER_CONTROL_PATH,/proc/touchpanel/capacitive_keys_disable)
 
 # USB HAL
 PRODUCT_SOONG_NAMESPACES += \
