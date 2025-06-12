@@ -1,7 +1,3 @@
-#
-# vendor.prop for mido
-#
-
 # Audio
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30

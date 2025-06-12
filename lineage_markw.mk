@@ -19,18 +19,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-# Inherit from mido device
+# Inherit from markw device
 AB_OTA_UPDATER := false
-$(call inherit-product, device/xiaomi/mido/device.mk)
+$(call inherit-product, device/xiaomi/markw/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := mido
-PRODUCT_NAME := lineage_mido
+PRODUCT_DEVICE := markw
+PRODUCT_NAME := lineage_markw
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 4
+PRODUCT_MODEL := Redmi 4 Prime
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
@@ -38,6 +38,6 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="mido-user 7.0 NRD90M V11.0.2.0.NCFMIXM release-keys" \
-    BuildFingerprint="xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys" \
-    DeviceProduct=mido
+    BuildDesc="markw-user 6.0.1 MMB29M V10.2.2.0.MBEMIXM release-keys" \
+    BuildFingerprint="Xiaomi/markw/markw:6.0.1/MMB29M/V10.2.2.0.MBEMIXM:user/release-keys" \
+    DeviceProduct=markw
