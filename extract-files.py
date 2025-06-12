@@ -65,9 +65,6 @@ blob_fixups: blob_fixups_user_type = {
     # Camera - liblog dep.
     ('vendor/lib/libmmcamera_dbg.so', 'vendor/lib/libmmcamera_pdafcamif.so', 'vendor/lib/libmmcamera_pdaf.so', 'vendor/lib/libmmcamera_imx258_mono.so', 'vendor/lib/libjpegehw.so', 'vendor/lib/libjpegdhw.so', 'vendor/lib/libmmcamera_hdr_gb_lib.so', 'vendor/lib/libmmcamera_imx258_ofilm.so', 'vendor/lib/libmmcamera_imx258_sunny.so', 'vendor/lib/libmmcamera2_sensor_modules.so', 'vendor/lib/libjpegdmahw.so', 'vendor/lib/libmmcamera_imx258.so', 'vendor/lib/libmmcamera_imx258_qtech.so', 'vendor/lib/libmmcamera_le2464c_master_eeprom.so', 'vendor/lib/libmmcamera_tintless_bg_pca_algo.so', 'vendor/lib/libqomx_jpegenc.so', 'vendor/lib/libqomx_jpegdec.so', 'vendor/lib/libqomx_jpegenc_pipe.so'): blob_fixup()
         .add_needed('liblog.so'),
-    # Dolby
-    ('vendor/lib64/libdlbdsservice.so', 'vendor/lib/libstagefright_soft_ddpdec.so'): blob_fixup()
-        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     # Fingerprint - shims & uneeded
     'vendor/bin/gx_fpd': blob_fixup()
         .remove_needed('libunwind.so')
