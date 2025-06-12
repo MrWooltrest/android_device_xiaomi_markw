@@ -42,9 +42,9 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     # Camera - Path fixups
     'vendor/bin/mm-qcamera-daemon': blob_fixup()
-        .regex_replace(r'/data/misc/camera/cam_socket', r'/data/vendor/qcam/cam_socket'),
+        .binary_regex_replace(b'/data/misc/camera/cam_socket', b'/data/vendor/qcam/cam_socket'),
     'vendor/lib/libmmcamera2_sensor_modules.so': blob_fixup()
-        .regex_replace(r'/system/etc/camera', r'/vendor/etc/camera'),
+        .binary_regex_replace(b'/system/etc/camera', b'/vendor/etc/camera'),
     ('vendor/lib/libmmcamera2_cpp_module.so',
     'vendor/lib/libmmcamera2_dcrf.so',
     'vendor/lib/libmmcamera2_iface_modules.so',
@@ -62,11 +62,11 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libmmcamera_tintless_algo.so',
     'vendor/lib/libmmcamera_tintless_bg_pca_algo.so',
     'vendor/lib/libmmcamera_tuning.so'): blob_fixup()
-        .regex_replace(r'/data/misc/camera/', r'/data/vendor/qcam/'),
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
 
     # Camera - Property fixup
     'vendor/lib/libmmcamera_dbg.so': blob_fixup()
-        .regex_replace(r'persist.camera.debug.logfile', r'persist.vendor.camera.dbglog'),
+        .binary_regex_replace(b'persist.camera.debug.logfile', b'persist.vendor.camera.dbglog'),
 
     # Camera - - libstdc++.so' -> 'libstdc++_vendor.so
     ('vendor/lib/libmmcamera_hdr_gb_lib.so',
@@ -148,7 +148,7 @@ blob_fixups: blob_fixups_user_type = {
 
     # Thermal
     'vendor/lib64/libthermalfeature.so': blob_fixup()
-        .regex_replace(r'system/etc/', r'vendor/etc/'),
+        .binary_regex_replace(b'system/etc/', b'vendor/etc/'),
 }  # fmt: skip
 
 # Define the module
