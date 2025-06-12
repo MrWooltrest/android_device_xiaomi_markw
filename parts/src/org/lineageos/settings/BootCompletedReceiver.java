@@ -30,9 +30,6 @@ import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.preferences.FileUtils;
 import org.lineageos.settings.soundcontrol.SoundControlSettings;
 import org.lineageos.settings.torch.TorchSettings;
-import org.lineageos.settings.vibration.VibratorStrengthPreference;
-import org.lineageos.settings.vibration.VibratorSettings;
-import org.lineageos.settings.vibration.VibratorOverrideModeSwitch;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -53,15 +50,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         boolean enabled = false;
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        enabled = sharedPrefs.getBoolean(VibratorSettings.PREF_VMAX_OVERRIDE_SWITCH, false);
-        restore(VibratorOverrideModeSwitch.getFile(), enabled);
 
         if (DozeUtils.isDozeEnabled(context) && DozeUtils.sensorsEnabled(context)) {
             if (DEBUG) Log.d(TAG, "Starting Doze service");
             DozeUtils.startService(context);
         }
-
-        VibratorStrengthPreference.restore(context);
 
         FileUtils.setValue(TorchSettings.TORCH_1_BRIGHTNESS_PATH,
                 Settings.Secure.getInt(context.getContentResolver(),

@@ -35,7 +35,6 @@ import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLU
 
 import org.lineageos.settings.soundcontrol.SoundControlSettingsActivity;
 import org.lineageos.settings.torch.TorchSettingsActivity;
-import org.lineageos.settings.vibration.VibratorActivity;
 
 import java.util.HashSet;
 
@@ -51,8 +50,6 @@ public class PartsSearchIndexablesProvider extends SearchIndexablesProvider {
                     SoundControlSettingsActivity.class.getName(), iconResId));
         sResMap.add(new SearchIndexableResource(rank, R.xml.torch_settings,
                     TorchSettingsActivity.class.getName(), iconResId));
-        sResMap.add(new SearchIndexableResource(rank, R.xml.vibration_settings,
-                    VibratorActivity.class.getName(), iconResId));
     }
 
     @Override
