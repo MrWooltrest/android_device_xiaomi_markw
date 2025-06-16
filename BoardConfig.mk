@@ -58,9 +58,6 @@ TARGET_KERNEL_CONFIG := \
     vendor/msm8953-perf_defconfig \
     vendor/markw.config
 
-# ANT
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
-
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
