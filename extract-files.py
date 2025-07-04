@@ -92,7 +92,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libjpegehw.so',
     'vendor/lib/libmmcamera_le2464c_eeprom.so',
     'vendor/lib/libmmcamera_le2464c_master_eeprom.so',
-    'vendor/lib/libmmcamera_s5k4h8.so',
     'vendor/lib/libqomx_jpegdec.so',
     'vendor/lib/libqomx_jpegenc.so',
     'vendor/lib/libqomx_jpegenc_pipe.so'): blob_fixup()
