@@ -67,8 +67,11 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libmmcamera_pdafcamif.so',
     'vendor/lib/libmmcamera_pdaf.so',
     'vendor/lib/libmmcamera_tintless_algo.so',
-    'vendor/lib/libmmcamera_tintless_bg_pca_algo.so',
-    'vendor/lib/libmmcamera_tuning.so'): blob_fixup()
+    'vendor/lib/libmmcamera_tintless_bg_pca_algo.so'): blob_fixup()
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
+
+    'vendor/lib/libmmcamera_tuning.so': blob_fixup()
+        .remove_needed('libmm-qcamera.so')
         .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
 
     # Camera - libstdc++.so => libstdc++_vendor.so
