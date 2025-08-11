@@ -140,10 +140,10 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Wi-Fi
 BOARD_HOSTAPD_DRIVER := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
+BOARD_HOSTAPD_PRIVATE_LIB := //hardware/qcom-caf/wlan/qcwcn:lib_driver_cmd_qcwcn
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := //hardware/qcom-caf/wlan/qcwcn:lib_driver_cmd_qcwcn
 PRODUCT_VENDOR_MOVE_ENABLED := true
 TARGET_USES_QCOM_WCNSS_QMI := true
 TARGET_WCNSS_QMI_INCLUDE_DIR := $(DEVICE_PATH)/configs/wifi/include
