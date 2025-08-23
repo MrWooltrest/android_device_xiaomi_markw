@@ -10,7 +10,7 @@ on post-fs-data
 # Restart camera provider after vendor.qcamerasvr is running
 on property:init.svc.vendor.qcamerasvr=running
     exec /bin/sleep 1s
-    restart vendor.camera-provider-2-4
+    restart vendor.camera.provider
 
 # Fingerprint
 service vendor.goodix_script /vendor/bin/init.goodix.sh
