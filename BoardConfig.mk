@@ -104,9 +104,6 @@ DEVICE_MATRIX_FILE   := hardware/qcom-caf/common/compatibility_matrix.xml
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
 
-# Media
-TARGET_USES_ION := true
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
