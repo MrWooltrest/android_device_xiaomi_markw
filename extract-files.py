@@ -143,10 +143,6 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
         .add_needed('libgui_shim.so')
         .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
-
-    # Thermal
-    'vendor/lib64/libthermalfeature.so': blob_fixup()
-        .binary_regex_replace(b'system/etc/', b'vendor/etc/'),
 }  # fmt: skip
 
 # Define the module

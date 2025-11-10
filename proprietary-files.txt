@@ -1110,10 +1110,9 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/sensors.ssc.so
 
-# Thermal - from Onclite PKQ1.181021.001/V10.2.5.0.PFLCNXM
-vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
-vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
-vendor/lib64/libthermalfeature.so|fa497ce7bcc61d1460d1a08a68b3630c287efb70
+# Thermal
+vendor/bin/thermal-engine
+vendor/lib64/libthermalclient.so
 
 # Time services
 vendor/app/TimeService/TimeService.apk
