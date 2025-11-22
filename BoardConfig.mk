@@ -122,8 +122,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912 # /cust
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 TARGET_USES_INTERACTION_BOOST := true
 
-# Qualcomm
+# Platform
 BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := msm8953
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
