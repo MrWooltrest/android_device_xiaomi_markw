@@ -42,3 +42,9 @@ cc_library_shared {
     srcs: ["gxfpd_shim.cpp"],
     vendor: true
 }
+
+cc_library_shared {
+    name: "libwui",
+    shared_libs: ["libgui_vendor"],
+    vendor: true
+}
