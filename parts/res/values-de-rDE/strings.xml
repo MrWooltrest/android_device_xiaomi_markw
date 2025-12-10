@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Umgebungsanzeige verwenden</string>
 
-    <!-- Audio Amplifcation -->
-    <string name="audio_title">Audioverstärkung</string>
-    <string name="audio_summary">Soundsteuerungseinstellungen</string>
-    <string name="headphone_gain">Kopfhörerverstärkung</string>
-    <string name="microphone_gain">Mikrofonverstärkung</string>
-    <string name="speaker_gain">Lautsprecherverstärkung</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Wert: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Standard</string>

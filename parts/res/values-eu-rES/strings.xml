@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Erabili inguruneko pantaila</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">Audio-anplifikazioa</string>
-    <string name="audio_summary">Soinu kontrolaren ezarpenak</string>
-    <string name="headphone_gain">Aurikularren irabazia</string>
-    <string name="microphone_gain">Mikrofonoaren irabazia</string>
-    <string name="speaker_gain">Bozgorailuaren irabazia</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Balioa: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Lehenetsia</string>

@@ -28,7 +28,6 @@ import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.preferences.FileUtils;
-import org.lineageos.settings.soundcontrol.SoundControlSettings;
 import org.lineageos.settings.torch.TorchSettings;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -62,13 +61,5 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         FileUtils.setValue(TorchSettings.TORCH_2_BRIGHTNESS_PATH,
                 Settings.Secure.getInt(context.getContentResolver(),
                         TorchSettings.KEY_YELLOW_TORCH_BRIGHTNESS, 100));
-
-        int gain = Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_HEADPHONE_GAIN, 4);
-        FileUtils.setValue(SoundControlSettings.HEADPHONE_GAIN_PATH, gain + " " + gain);
-        FileUtils.setValue(SoundControlSettings.MICROPHONE_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_MICROPHONE_GAIN, 0));
-        FileUtils.setValue(SoundControlSettings.SPEAKER_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_SPEAKER_GAIN, 0));
     }
 }

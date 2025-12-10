@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Выкарыстоўваць навакольнае адлюстраванне</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">Узмацненне гуку</string>
-    <string name="audio_summary">Настройкі кіравання гукам</string>
-    <string name="headphone_gain">Узмацненне навушнікаў</string>
-    <string name="microphone_gain">Узмацненне мікрафона</string>
-    <string name="speaker_gain">Узмацненне дынаміка</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Значэнне: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Па змаўчанні</string>

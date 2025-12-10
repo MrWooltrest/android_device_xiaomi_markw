@@ -19,13 +19,6 @@
     <!-- Ambient display-->
     <string name="ambient_enable">Ambient megjelenítés használata</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">Hangerősítés</string>
-    <string name="audio_summary">Hangvezérlési beállítások</string>
-    <string name="headphone_gain">Fejhallgató-erősítés</string>
-    <string name="microphone_gain">Mikrofonerősítés</string>
-    <string name="speaker_gain">Hangszóró erősítése</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Érték: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Alapértelmezett</string>

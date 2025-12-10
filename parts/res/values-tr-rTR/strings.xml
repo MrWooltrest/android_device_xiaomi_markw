@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Ortam Görünümünü Kullan</string>
 
-     <!-- Audio Amplification -->
-    <string name="audio_title">Ses Amplifikasyonu</string>
-    <string name="audio_summary">Ses denetimi ayarları</string>
-    <string name="headphone_gain">Kulaklık kazancı</string>
-    <string name="microphone_gain">Mikrofon kazancı</string>
-    <string name="speaker_gain">Hoparlör kazancı</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Değer: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Varsayılan</string>

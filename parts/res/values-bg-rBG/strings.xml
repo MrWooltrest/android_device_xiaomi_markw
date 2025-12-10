@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Използване на околен дисплей</string>
 
-    <!-- Аudio amplification -->
-    <string name="audio_title">Аудио усилване</string>
-    <string name="audio_summary">Настройки за управление на звука</string>
-    <string name="headphone_gain">Усилване на слушалки</string>
-    <string name="microphone_gain">Усилване на микрофона</string>
-    <string name="speaker_gain">Усилване на високоговорителя</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Стойност: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">По подразбиране</string>

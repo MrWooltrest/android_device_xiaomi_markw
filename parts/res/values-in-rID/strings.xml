@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Gunakan Tampilan Sekitar</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">Amplifikasi Audio</string>
-    <string name="audio_summary">Setelan kontrol suara</string>
-    <string name="headphone_gain">Penguatan headphone</string>
-    <string name="microphone_gain">Penguatan mikrofon</string>
-    <string name="speaker_gain">Penguatan speaker</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Nilai: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Default</string>

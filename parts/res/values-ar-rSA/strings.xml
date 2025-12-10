@@ -16,17 +16,6 @@
     <!-- Ambient settings -->
     <string name="ambient_enable">استخدام العرض المحيط</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">تضخيم الصوت</string>
-    <string name="audio_summary">إعدادات التحكم في الصوت</string>
-    <string name="headphone_gain">كسب سماعة الرأس</string>
-    <string name="microphone_gain">كسب الميكروفون</string>
-    <string name="speaker_gain">كسب مكبر الصوت</string>
-    <string name="custom_seekbar_value">القيمة: <xliff:g id="v">%s</xliff:g></string>
-    <string name="custom_seekbar_default_value">افتراضي</string>
-    <string name="custom_seekbar_default_value_to_set">القيمة الافتراضية: <xliff:g id="v">%s</xliff:g>\nاضغط لفترة طويلة لتعيين</string>
-    <string name="custom_seekbar_default_value_is_set">تم تعيين القيمة الافتراضية</string>
-
     <!-- Torch -->
     <string name="torch_title">إعدادات الشعلة</string>
     <string name="torch_summary">عنصر تحكم مصباح يدوي أبيض / أصفر</string>

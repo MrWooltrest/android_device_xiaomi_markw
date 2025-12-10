@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable"> ایمبیئنٹ ڈسپلے استعمال کریں</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">آڈیو ایمپلیفیکیشن</string>
-    <string name="audio_summary">صوتی کنٹرول کی ترتیبات</string>
-    <string name="headphone_gain">ہیڈ فون کا فائدہ</string>
-    <string name="microphone_gain">مائیکروفون فائدہ</string>
-    <string name="speaker_gain">اسپیکر کا فائدہ</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value"> قدر: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">ڈیفالٹ</string>

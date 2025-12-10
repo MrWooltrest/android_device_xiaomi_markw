@@ -19,13 +19,6 @@
     <!-- Ambient display -->
     <string name="ambient_enable">Koristi ambijentalni zaslon</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">Audio pojačanje</string>
-    <string name="audio_summary">Postavke kontrole zvuka</string>
-    <string name="headphone_gain">Jačanje slušalica</string>
-    <string name="microphone_gain">Pojačanje mikrofona</string>
-    <string name="speaker_gain">Jačanje zvučnika</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Vrijednost: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Zadano</string>

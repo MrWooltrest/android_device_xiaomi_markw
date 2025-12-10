@@ -18,13 +18,6 @@
     <!-- Ambient settings -->
     <string name="ambient_enable">Use Ambient Display</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">Audio Amplification</string>
-    <string name="audio_summary">Sound control settings</string>
-    <string name="headphone_gain">Headphone gain</string>
-    <string name="microphone_gain">Microphone gain</string>
-    <string name="speaker_gain">Speaker gain</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Default</string>

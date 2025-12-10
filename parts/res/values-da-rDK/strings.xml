@@ -19,13 +19,6 @@
     <!-- Ambient display -->
     <string name="ambient_enable">Brug Ambient Display</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">Lydforstærkning</string>
-    <string name="audio_summary">Indstillinger for lydkontrol</string>
-    <string name="headphone_gain">Hovedtelefonforstærkning</string>
-    <string name="microphone_gain">Mikrofonforstærkning</string>
-    <string name="speaker_gain">Højttalerforstærkning</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Værdi: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Standard</string>

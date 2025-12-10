@@ -19,13 +19,6 @@
     <!-- Ambient settings -->
     <string name="ambient_enable">Kasutage ümbritsevat kuva</string>
 
-    <!-- Audio amplification -->
-    <string name="audio_title">Heli võimendus</string>
-    <string name="audio_summary">Heli juhtimise seaded</string>
-    <string name="headphone_gain">Kõrvaklappide võimendus</string>
-    <string name="microphone_gain">Mikrofoni võimendus</string>
-    <string name="speaker_gain">Kõlari võimendus</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Väärtus: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Vaikeseade</string>

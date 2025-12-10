@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Utilitza la pantalla ambiental</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">Amplificació d\'àudio</string>
-    <string name="audio_summary">Configuració del control de so</string>
-    <string name="headphone_gain">Guany dels auriculars</string>
-    <string name="microphone_gain">Guany del micròfon</string>
-    <string name="speaker_gain">Guany de l\'altaveu</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Per defecte</string>

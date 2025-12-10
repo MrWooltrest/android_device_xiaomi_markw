@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Použít ambientní displej</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">Zesílení zvuku</string>
-    <string name="audio_summary">Nastavení ovládání zvuku</string>
-    <string name="headphone_gain">Zisk sluchátek</string>
-    <string name="microphone_gain">Zisk mikrofonu</string>
-    <string name="speaker_gain">Zisk reproduktoru</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Hodnota: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Výchozí</string>

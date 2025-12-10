@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
      <string name="ambient_enable">Usar exibição ambiente</string>
 
-     <!-- Audio Amplication -->
-     <string name="audio_title">Amplificação de áudio</string>
-     <string name="audio_summary">Configurações de controle de som</string>
-     <string name="headphone_gain">Ganho de fone de ouvido</string>
-     <string name="microphone_gain">Ganho do microfone</string>
-     <string name="speaker_gain">Ganho do alto-falante</string>
-
      <!-- Custom seekbar -->
      <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
      <string name="custom_seekbar_default_value">Padrão</string>

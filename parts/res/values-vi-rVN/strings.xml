@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Sử dụng màn hình xung quanh</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">Khuếch đại âm thanh</string>
-    <string name="audio_summary">Cài đặt điều khiển âm thanh</string>
-    <string name="headphone_gain">Độ lợi của tai nghe</string>
-    <string name="microphone_gain">Độ lợi micrô</string>
-    <string name="speaker_gain">Độ lợi của loa</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Giá trị: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Mặc định</string>

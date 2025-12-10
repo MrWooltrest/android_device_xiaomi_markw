@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">از نمایشگر محیطی استفاده کنید</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">تقویت صدا</string>
-    <string name="audio_summary">تنظیمات کنترل صدا</string>
-    <string name="headphone_gain">هدفون</string>
-    <string name="microphone_gain">بهره میکروفون</string>
-    <string name="speaker_gain">بهبود بلندگو</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">مقدار: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">پیش‌فرض</string>

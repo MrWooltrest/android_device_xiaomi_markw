@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Використовувати зовнішній дисплей</string>
 
-    <!--Audio Amplification -->
-    <string name="audio_title">Посилення звуку</string>
-    <string name="audio_summary">Налаштування керування звуком</string>
-    <string name="headphone_gain">Посилення навушників</string>
-    <string name="microphone_gain">Посилення мікрофона</string>
-    <string name="speaker_gain">Посилення динаміка</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Значення: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">за замовчуванням</string>

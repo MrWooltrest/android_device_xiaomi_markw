@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">परिवेश प्रदर्शन का उपयोग करें</string>
 
-    <!-- Audio Amplification-->
-    <string name="audio_title">ऑडियो एम्प्लीफिकेशन</string>
-    <string name="audio_summary">ध्वनि नियंत्रण सेटिंग</string>
-    <string name="headphone_gain">हेडफ़ोन लाभ</string>
-    <string name="microphone_gain">माइक्रोफ़ोन लाभ</string>
-    <string name="speaker_gain">स्पीकर का लाभ</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">मान: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">डिफ़ॉल्ट</string>

@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">Χρήση οθόνης περιβάλλοντος</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">Ενίσχυση ήχου</string>
-    <string name="audio_summary">Ρυθμίσεις ελέγχου ήχου</string>
-    <string name="headphone_gain">Κέρδος ακουστικών</string>
-    <string name="microphone_gain">Κέρδος μικροφώνου</string>
-    <string name="speaker_gain">Κέρδος ηχείου</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Τιμή: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">Προεπιλογή</string>

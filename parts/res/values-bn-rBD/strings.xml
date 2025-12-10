@@ -19,13 +19,6 @@
     <!-- Ambient Display -->
     <string name="ambient_enable">পরিবেষ্টিত প্রদর্শন ব্যবহার করুন</string>
 
-    <!-- Audio Amplification -->
-    <string name="audio_title">অডিও পরিবর্ধন</string>
-    <string name="audio_summary">শব্দ নিয়ন্ত্রণ সেটিংস</string>
-    <string name="headphone_gain">হেডফোন লাভ</string>
-    <string name="microphone_gain">মাইক্রোফোন লাভ</string>
-    <string name="speaker_gain">স্পীকার লাভ</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">মান: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">ডিফল্ট</string>
