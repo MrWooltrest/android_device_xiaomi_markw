@@ -715,6 +715,10 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
 
+# Display calibration - from markw
+etc/qdcm_calib_data_nt35596_1080p_video_EBBG.xml:vendor/etc/qdcm_calib_data_nt35596_1080p_video_EBBG.xml|ed2740d93e10c4351fee0328ff5ff5718cc9c718
+etc/qdcm_calib_data_r63350_1080p_video_Tianma.xml:vendor/etc/qdcm_calib_data_r63350_1080p_video_Tianma.xml|a1608f2d84a1ee47d242593ce71e339349f77d8f
+
 # DPM
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
