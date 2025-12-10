@@ -68,8 +68,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
 
     # Camera - libmmcamera_pdaf/pdafcamif
-    'vendor/lib/libmmcamera_pdafcamif.so',
-    'vendor/lib/libmmcamera_pdaf.so': blob_fixup()
+    ('vendor/lib/libmmcamera_pdafcamif.so',
+    'vendor/lib/libmmcamera_pdaf.so'): blob_fixup()
         .add_needed('liblog.so')
         .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
     
@@ -79,7 +79,7 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'/system/etc/camera', b'/vendor/etc/camera'),
 
     # Camera - libmmcamera2_stats_modules
-    'vendor/lib/libmmcamera2_stats_modules.so',
+    'vendor/lib/libmmcamera2_stats_modules.so': blob_fixup()
         .add_needed('libcamshim.so')
         .remove_needed('libandroid.so')
         .replace_needed('libgui.so', 'libwui.so')
