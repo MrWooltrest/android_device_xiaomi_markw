@@ -36,13 +36,12 @@ lib_fixups: lib_fixups_user_type = {
     ): lib_fixup_vendor_suffix,
 }
 
-# Define the blob fixups
 blob_fixups: blob_fixups_user_type = {
-    # Camera - Path fixups
+    # Camera - mm-qcamera-daemon
     'vendor/bin/mm-qcamera-daemon': blob_fixup()
         .binary_regex_replace(b'/data/misc/camera/cam_socket', b'/data/vendor/qcam/cam_socket'),
-    'vendor/lib/libmmcamera2_sensor_modules.so': blob_fixup()
-        .binary_regex_replace(b'/system/etc/camera', b'/vendor/etc/camera'),
+    
+    # Camera - Path fixups
     ('vendor/lib/libmmcamera2_cpp_module.so',
     'vendor/lib/libmmcamera2_dcrf.so',
     'vendor/lib/libmmcamera2_iface_modules.so',
@@ -50,92 +49,90 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libmmcamera2_mct.so',
     'vendor/lib/libmmcamera2_pproc_modules.so',
     'vendor/lib/libmmcamera2_q3a_core.so',
-    'vendor/lib/libmmcamera2_sensor_modules.so',
     'vendor/lib/libmmcamera2_stats_algorithm.so',
-    'vendor/lib/libmmcamera2_stats_modules.so',
-    'vendor/lib/libmmcamera_dbg.so',
     'vendor/lib/libmmcamera_imglib.so',
-    'vendor/lib/libmmcamera_pdafcamif.so',
-    'vendor/lib/libmmcamera_pdaf.so',
-    'vendor/lib/libmmcamera_tintless_algo.so',
-    'vendor/lib/libmmcamera_tintless_bg_pca_algo.so',
-    'vendor/lib/libmmcamera_tuning.so'): blob_fixup()
+    'vendor/lib/libmmcamera_tintless_algo.so'): blob_fixup()
         .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
 
-    # Camera - Property fixup
+    # Camera - libmmcamera_dbg
     'vendor/lib/libmmcamera_dbg.so': blob_fixup()
+        .add_needed('liblog.so')
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/')
         .binary_regex_replace(b'persist.camera.debug.logfile', b'persist.vendor.camera.dbglog'),
 
-    # Camera - - libstdc++.so' -> 'libstdc++_vendor.so
-    ('vendor/lib/libmmcamera_hdr_gb_lib.so',
-    'vendor/lib/libmpbase.so',
-    'vendor/lib/liboptizoom.so',
+    # Camera - libmmcamera_hdr_gb_lib
+    'vendor/lib/libmmcamera_hdr_gb_lib.so': blob_fixup()
+        .add_needed('liblog.so')
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+
+    # Camera - libmmcamera_pdaf/pdafcamif
+    'vendor/lib/libmmcamera_pdafcamif.so',
+    'vendor/lib/libmmcamera_pdaf.so': blob_fixup()
+        .add_needed('liblog.so')
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
+    
+    # Camera - libmmcamera2_sensor_modules
+    'vendor/lib/libmmcamera2_sensor_modules.so': blob_fixup()
+        .add_needed('liblog.so')
+        .binary_regex_replace(b'/system/etc/camera', b'/vendor/etc/camera'),
+
+    # Camera - libmmcamera2_stats_modules
+    'vendor/lib/libmmcamera2_stats_modules.so',
+        .add_needed('libcamshim.so')
+        .remove_needed('libandroid.so')
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/')
+        .binary_regex_replace(b'persist.camera.debug.logfile', b'persist.vendor.camera.dbglog'),
+
+    # Camera - libmmcamera_tintless_bg_pca_algo
+    'vendor/lib/libmmcamera_tintless_bg_pca_algo.so': blob_fixup()
+        .add_needed('liblog.so')
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
+
+    # Camera - libmmcamera_tuning
+    'vendor/lib/libmmcamera_tuning.so': blob_fixup()
+        .remove_needed('libmm-qcamera.so')
+        .binary_regex_replace(b'/data/misc/camera/', b'/data/vendor/qcam/'),
+
+    # Camera - libstdc++.so => libstdc++_vendor.so
+    ('vendor/lib/liboptizoom.so',
     'vendor/lib/libseemore.so',
     'vendor/lib/libtrueportrait.so',
     'vendor/lib/libubifocus.so',
     'vendor/lib/libchromaflash.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
 
-    # Camera - shims, uneeded & VNDK fixups
-    'vendor/lib/libmmcamera_ppeiscore.so': blob_fixup()
-        .add_needed('libppeiscore_shim.so')
-        .replace_needed('libGLESv2.so', 'libGLESv2_adreno.so'),
-    'vendor/lib/libmmcamera_tuning.so': blob_fixup()
-        .remove_needed('libmm-qcamera.so'),
-    ('vendor/lib/libmmcamera2_stats_modules.so',
-    'vendor/lib/libmpbase.so'): blob_fixup()
-        .add_needed('libcamshim.so')
-        .remove_needed('libandroid.so'),
-
     # Camera - liblog dep.
-    ('vendor/lib/libmmcamera_dbg.so',
-    'vendor/lib/libmmcamera_pdafcamif.so',
-    'vendor/lib/libmmcamera_pdaf.so',
-    'vendor/lib/libmmcamera_imx258_mono.so',
-    'vendor/lib/libjpegehw.so',
+    ('vendor/lib/libjpegehw.so',
     'vendor/lib/libjpegdhw.so',
-    'vendor/lib/libmmcamera_hdr_gb_lib.so',
-    'vendor/lib/libmmcamera_imx258_ofilm.so',
-    'vendor/lib/libmmcamera_imx258_sunny.so',
-    'vendor/lib/libmmcamera2_sensor_modules.so',
     'vendor/lib/libjpegdmahw.so',
-    'vendor/lib/libmmcamera_imx258.so',
-    'vendor/lib/libmmcamera_imx258_qtech.so',
     'vendor/lib/libmmcamera_le2464c_master_eeprom.so',
-    'vendor/lib/libmmcamera_tintless_bg_pca_algo.so',
     'vendor/lib/libqomx_jpegenc.so',
     'vendor/lib/libqomx_jpegdec.so',
     'vendor/lib/libqomx_jpegenc_pipe.so'): blob_fixup()
         .add_needed('liblog.so'),
 
-    # Fingerprint - shims & uneeded
+    # Fingerprint - Goodix
     'vendor/bin/gx_fpd': blob_fixup()
-        .remove_needed('libunwind.so')
-        .remove_needed('libbacktrace.so')
         .add_needed('libshims_gxfpd.so')
-        .add_needed('fakelogprint.so'),
-    'vendor/lib64/libfpservice.so': blob_fixup()
-        .add_needed('libbinder_shim.so'),
+        .add_needed('fakelogprint.so')
+        .remove_needed('libunwind.so')
+        .remove_needed('libbacktrace.so'),
     ('vendor/lib64/hw/fingerprint.goodix.so',
     'vendor/lib64/gxfingerprint.default.so'): blob_fixup()
-        .add_needed('fakelogprint.so'),
-
-    # Fingerprint - liblog dep.
-    ('vendor/lib64/libfp_client.so', 'libfpservice.so'): blob_fixup()
-        .add_needed('liblog.so'),
-
-    # Fingerprint - libstdc++.so' -> 'libstdc++_vendor.so
-    ('vendor/lib64/libfp_client.so',
-    'vendor/lib64/libfpservice.so',
-    'vendor/lib64/libfpnav.so',
-    'vendor/lib64/hw/fingerprint.goodix.so',
-    'vendor/lib64/gxfingerprint.default.so'): blob_fixup()
+        .fix_soname()
+        .add_needed('fakelogprint.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
 
-    # Fingerprint - so name fixups
-    ('vendor/lib64/hw/fingerprint.goodix.so',
-    'vendor/lib64/hw/gxfingerprint.default.so'):blob_fixup()
-        .fix_soname(),
+    # Fingerprint - FPC
+    'vendor/lib64/libfpservice.so': blob_fixup()
+        .add_needed('liblog.so')
+        .add_needed('libbinder_shim.so')
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'vendor/lib64/libfp_client.so': blob_fixup()
+        .add_needed('liblog.so')
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'vendor/lib64/libfpnav.so': blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
 
     # IMS
     'system_ext/lib64/lib-imscamera.so': blob_fixup()
