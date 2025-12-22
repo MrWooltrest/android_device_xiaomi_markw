@@ -192,7 +192,7 @@ vendor/lib/libtrueportrait.so;DISABLE_CHECKELF|3bf2b5918896172b08cf2e2017c6665a5
 vendor/lib/libubifocus.so;DISABLE_CHECKELF|833a305c780b2e7e338323c5ba27cb042f5cc3ed|c0be7d438270bce89b5e10be8fe7e025f81bba4b
 
 # Camera sensors - from markw
-vendor/lib/libmmcamera_ov5670_sunny.so|2a5b960ee791caafc7eebf050c8afe77055ff528
+vendor/lib/libmmcamera_ov5670_sunny.so;DISABLE_CHECKELF|2a5b960ee791caafc7eebf050c8afe77055ff528
 
 # Camera actuators - from land
 vendor/lib/libactuator_bu64244gwz.so;DISABLE_CHECKELF|cda399a1c06f92830a0eef12fd078a678ea54e9c
