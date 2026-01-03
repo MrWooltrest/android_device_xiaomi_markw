@@ -17,3 +17,8 @@ service vendor.goodix_script /vendor/bin/init.goodix.sh
 # USB
 on property:ro.product.vendor.model=*
     setprop vendor.usb.product_string ${ro.product.vendor.model}
+
+# ZRAM
+on property:sys.boot_completed=1
+    swapon_all /vendor/etc/fstab.zram
+    write /proc/sys/vm/swappiness 100
