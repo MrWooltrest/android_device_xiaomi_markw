@@ -1,6 +1,5 @@
 # All unpinned blobs are extracted from FP3-REL-6.A.031.5-gms-fa7632b5-user
 # markw: markw-user 6.0.1 MMB29M V10.2.2.0.MBEMIXM release-keys
-# mido: xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys
 
 # Current blobs with ELF checks disabled:
 # libmmcamera_faceproc, libmmcamera_faceproc2 depends on NDK libc and build is unable to resolve its symbols
@@ -480,14 +479,16 @@ vendor/etc/init/android.hardware.drm-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/lib/libwvaidl.so
 
-# Fingerprint - from mido
-bin/gx_fpd:vendor/bin/gx_fpd|aa514f87d289b04acf3cbefb404d3c314bbe5128|aa514f87d289b04acf3cbefb404d3c314bbe5128
-lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so;FIX_SONAME|3a845d4add509cdb951998296a339c9b0662192d|3a845d4add509cdb951998296a339c9b0662192d
-lib64/hw/fingerprint.searchf.so:vendor/lib64/hw/fingerprint.searchf.so|6294b9f22e4f12070a17287a6e9ef7cb05d92f13
-lib64/hw/gxfingerprint.default.so:vendor/lib64/hw/gxfingerprint.default.so;FIX_SONAME|816561deb30a550d35909fe08ca2f13158ff7a22|816561deb30a550d35909fe08ca2f13158ff7a22
-lib64/libfp_client.so:vendor/lib64/libfp_client.so|c369c7337bc41a168c651ecb61f657dabd8d94b8|c369c7337bc41a168c651ecb61f657dabd8d94b8
-lib64/libfpnav.so:vendor/lib64/libfpnav.so|65f463fcbd2a2e5d4cd40823a3abbe3d5891a286|65f463fcbd2a2e5d4cd40823a3abbe3d5891a286
-lib64/libfpservice.so:vendor/lib64/libfpservice.so|2eb062ae73c045a79c4ca6dc96ac6e37e1d8c57a|2eb062ae73c045a79c4ca6dc96ac6e37e1d8c57a
+# Fingerprint Goodix - from markw
+bin/gx_fpd:vendor/bin/gx_fpd|c78f6fdb323fe4883ea495f97687e0cdfb8d5a09|9e9fbb644abf0bb4adc51eae14b58e599d8eeebd
+lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so;FIX_SONAME|775c7648c6e8334956b3edb03d4ce1f509460dc0|93c4949748e279e6344100bd7ae53a0fd443988d
+lib64/hw/gxfingerprint.default.so:vendor/lib64/hw/gxfingerprint.default.so;FIX_SONAME|63e1a095a6688137573b0b2d3503019497e0bb4b|e9124a12af5e689892a44b10280c61573ea459fd
+lib64/libfp_client.so:vendor/lib64/libfp_client.so|0930e81e4e7d551d499baf6e88e0c7f4c613acdd|6c1fe5d9402e7b79c94ff1b79cdec59971b0bcde
+lib64/libfpnav.so:vendor/lib64/libfpnav.so|588301735456b31b09aa0779a7f46481056868dd|65f463fcbd2a2e5d4cd40823a3abbe3d5891a286
+lib64/libfpservice.so:vendor/lib64/libfpservice.so|81250f79f2f0f5bfd6652ee1a0febcac323d2bb2|d4d1091a53bb2e3bcf16b09230478310720a4b6c
+
+# Fingerprint FPC - from markw
+lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.so;FIX_SONAME|7b1801416801916f5b77686fef01859f11685674|3a69b5714097e298ee03d0569734666ee33e797e
 
 # FM Radio
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
