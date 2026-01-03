@@ -121,21 +121,20 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('fakelogprint.so')
         .remove_needed('libunwind.so')
         .remove_needed('libbacktrace.so'),
-    ('vendor/lib64/hw/fingerprint.goodix.so',
-    'vendor/lib64/gxfingerprint.default.so'): blob_fixup()
-        .fix_soname()
+    'vendor/lib64/hw/fingerprint.goodix.so': blob_fixup()
         .add_needed('fakelogprint.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-
-    # Fingerprint - FPC
-    'vendor/lib64/libfpservice.so': blob_fixup()
-        .add_needed('liblog.so')
-        .add_needed('libbinder_shim.so')
+    'vendor/lib64/gxfingerprint.default.so': blob_fixup()
+        .add_needed('fakelogprint.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/libfp_client.so': blob_fixup()
         .add_needed('liblog.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/libfpnav.so': blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'vendor/lib64/libfpservice.so': blob_fixup()
+        .add_needed('liblog.so')
+        .add_needed('libbinder_shim.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
 
     # IMS
