@@ -4,28 +4,15 @@
 # Camera
 /data/vendor/qcam(/.*)?                         u:object_r:vendor_camera_data_file:s0
 
-# Fpc Fingerprint
-/data/fpc(/.*)?                                 u:object_r:fpc_data_file:s0
-/dev/socket/fpce(/.*)?                          u:object_r:fpce_socket:s0
-/sys/devices/(platform)?/soc/soc:fpc1020(/.*)?  u:object_r:fpc_sysfs:s0
-
 # Glove Mode
 /sys/class/tp_glove/device(/.*)?		  u:object_r:proc_touchpanel:s0
 /sys/devices/virtual/tp_glove(/.*)?		  u:object_r:proc_touchpanel:s0
-
-# Goodix Fingerprint
-/dev/goodix_fp                                  u:object_r:gx_fpd_device:s0
-/data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
-/data/system/fingerprint(/.*)?                  u:object_r:gx_fpd_data_file:s0
-/(vendor|system/vendor)/bin/gx_fpd              u:object_r:gx_fpd_exec:s0
-/(vendor|system/vendor)/bin/init\.goodix\.sh	  u:object_r:init_fingerprint_exec:s0
 
 # Graphics Libs
 /vendor/lib(64)?/libadreno_app_profiles\.so    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpudataproducer\.so        u:object_r:same_process_hal_file:s0
 
 # HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi_markw    u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal-service\.qti\.xiaomi_markw                    u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_markw                        u:object_r:hal_lineage_touch_default_exec:s0
 
