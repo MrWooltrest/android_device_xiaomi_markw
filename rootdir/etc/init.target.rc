@@ -66,6 +66,12 @@ on init
     chown system system /sys/class/leds/infrared/transmit
     chown system system /sys/class/leds/infrared/brightness
 
+# Fingerprint
+service vendor.goodix_script /vendor/bin/init.goodix.sh
+    class late_start
+    user root
+    oneshot
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
