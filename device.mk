@@ -287,6 +287,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk \
     fstab.zram \
     init.goodix.sh \
+    init.markw.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
