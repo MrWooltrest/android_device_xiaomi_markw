@@ -120,7 +120,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libshims_gxfpd.so')
         .add_needed('fakelogprint.so')
         .remove_needed('libunwind.so')
-        .remove_needed('libbacktrace.so'),
+        .remove_needed('libbacktrace.so')
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/hw/fingerprint.goodix.so': blob_fixup()
         .add_needed('fakelogprint.so')
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
