@@ -386,8 +386,8 @@ etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml:vendor/etc/camera/sunny_s5k3l8_f3l
 # Camera firmware - from daisy
 vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
 
-# Charger - from LA.UM.9.6.2.r1-04200-89xx.0
-vendor/bin/hvdcp_opti|d160d2193640a21b7eff70425bcdbfc775063cd5
+# Charger
+vendor/bin/hvdcp_opti
 
 # Consumer IR - from markw
 lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|c8c5d3a730cf035e2f0adc4eab4eae0023524c00
