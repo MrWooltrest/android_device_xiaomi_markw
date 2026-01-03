@@ -27,6 +27,10 @@ on property:hw.fm.init=*
 on property:ro.product.vendor.model=*
     setprop vendor.usb.product_string ${ro.product.vendor.model}
 
+# xtra-daemon
+on property:persist.sys.xtra-daemon.enabled=*
+    restart loc_launcher
+
 # ZRAM
 on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.zram
