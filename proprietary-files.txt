@@ -483,9 +483,11 @@ vendor/lib/libwvaidl.so
 bin/gx_fpd:vendor/bin/gx_fpd|c78f6fdb323fe4883ea495f97687e0cdfb8d5a09|9e9fbb644abf0bb4adc51eae14b58e599d8eeebd
 lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so;FIX_SONAME|775c7648c6e8334956b3edb03d4ce1f509460dc0|93c4949748e279e6344100bd7ae53a0fd443988d
 lib64/hw/gxfingerprint.default.so:vendor/lib64/hw/gxfingerprint.default.so;FIX_SONAME|63e1a095a6688137573b0b2d3503019497e0bb4b|e9124a12af5e689892a44b10280c61573ea459fd
-lib64/libfp_client.so:vendor/lib64/libfp_client.so|0930e81e4e7d551d499baf6e88e0c7f4c613acdd|6c1fe5d9402e7b79c94ff1b79cdec59971b0bcde
 lib64/libfpnav.so:vendor/lib64/libfpnav.so|588301735456b31b09aa0779a7f46481056868dd|65f463fcbd2a2e5d4cd40823a3abbe3d5891a286
-lib64/libfpservice.so:vendor/lib64/libfpservice.so|81250f79f2f0f5bfd6652ee1a0febcac323d2bb2|d4d1091a53bb2e3bcf16b09230478310720a4b6c
+
+# Fingerprint Goodix (patched Parcel size) - from markw
+lib64/libfp_client.so:vendor/lib64/libfp_client.so|1300e5d4c25504eb29f27e8d3467eaa0825acbef|6ec458b23c2c996626b047b6f6dcfda47aee78e3
+lib64/libfpservice.so:vendor/lib64/libfpservice.so|74f3db0378827ba46958eb44635e33c39e1efd72|8ccbfc095c423282715a5066478dbd3c8d422e42
 
 # Fingerprint FPC - from markw
 lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.so;FIX_SONAME|7b1801416801916f5b77686fef01859f11685674|3a69b5714097e298ee03d0569734666ee33e797e
