@@ -836,6 +836,7 @@ vendor/lib64/sensors.ssc.so
 
 # Thermal
 vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
 vendor/lib64/libthermalclient.so
 
 # Time services
