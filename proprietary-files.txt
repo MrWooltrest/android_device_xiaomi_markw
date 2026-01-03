@@ -1,4 +1,5 @@
 # All unpinned blobs are extracted from FP3-REL-6.A.031.5-gms-fa7632b5-user
+# daisy: daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 # markw: markw-user 6.0.1 MMB29M V10.2.2.0.MBEMIXM release-keys
 
 # Current blobs with ELF checks disabled:
@@ -590,15 +591,15 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
-# Graphics firmware - from Daisy 10/QKQ1.191002.002/V11.0.21.0.QDLMIXM
+# Graphics firmware - from daisy
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
 vendor/firmware/a506_zap.b01|374b5c4a2212b2636d5dfc2deda66b56b6bf2d03
 vendor/firmware/a506_zap.b02|b79957c47f0a6757ac1d721dbe06551508454634
 vendor/firmware/a506_zap.mdt|621df918f1d6ef0a0c3fe25c8f6a58d56af4b26a
 
-# Graphics firmware - from LA.UM.9.6.2.r1-04200-89xx.0
-vendor/firmware/a530_pfp.fw|35b72dce880191ff087af2524205afce40ea8c97
-vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
+# Graphics firmware
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
 
 # IRQ Balance - from LA.UM.9.6.2.r1-04200-89xx.0
 vendor/bin/msm_irqbalance|e5706bc0acab394b53fafdc1d7f342f69c6f5649
