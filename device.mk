@@ -337,7 +337,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch-service.xiaomi
 
-$(call soong_config_set,XIAOMI_TOUCH,KEY_DISABLER_CONTROL_PATH,/proc/touchpanel/capacitive_keys_disable)
+$(call soong_config_set,XIAOMI_TOUCH,KEY_DISABLER_CONTROL_PATH,/proc/sys/dev/xiaomi_touchscreen/disable_keys)
 
 # USB HAL
 PRODUCT_SOONG_NAMESPACES += \
