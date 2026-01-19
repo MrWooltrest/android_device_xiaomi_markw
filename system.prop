@@ -6,6 +6,8 @@ vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 bluetooth.sco.disable_enhanced_connection=true
 
 # Camera
+persist.camera.gyro.android=0
+persist.camera.gyro.disable=1
 persist.vendor.camera.display.lmax=1280x720
 persist.vendor.camera.display.umax=1920x1080
 vidc.enc.dcvs.extra-buff-count=2
