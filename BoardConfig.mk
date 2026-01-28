@@ -57,6 +57,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 TARGET_KERNEL_VERSION := 4.19
 TARGET_KERNEL_CONFIG := \
     vendor/msm8953-perf_defconfig \
+    vendor/msm-clk.config \
     vendor/markw.config
 
 # Audio
