@@ -3,6 +3,10 @@ on init
     chown system system /sys/class/leds/infrared/transmit
     chown system system /sys/class/leds/infrared/brightness
 
+    # qcmetadataprinter
+    chmod 0755 /vendor/bin/get_offsets
+    symlink /vendor/bin/get_offsets /vendor/lib/get_offsets
+
 on post-fs-data
     # Create folder for mm-qcamera-daemon
     mkdir /data/vendor/qcam/ 0770 camera camera
@@ -19,6 +23,13 @@ service vendor.goodix_script /vendor/bin/init.goodix.sh
     group system
     oneshot
 
+service vendor.get_offsets /system/bin/logwrapper /vendor/bin/get_offsets
+    override
+    disabled
+    class late_start
+    user system
+    group system
+
 # FM
 on property:hw.fm.init=*
     write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
@@ -34,3 +45,4 @@ on property:persist.sys.xtra-daemon.enabled=*
 # ZRAM
 on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.zram
+#    start vendor.get_offsets
