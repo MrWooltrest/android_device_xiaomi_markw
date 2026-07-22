@@ -325,10 +325,6 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
     init.qti.qseecomd.sh
 
-# RemovePackages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # RIL
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
