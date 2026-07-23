@@ -3,6 +3,7 @@ type camera_socket, file_type, data_file_type;
 
 # DT2W
 type sysctl_ts, fs_type, proc_type;
+type sysfs_ts, fs_type, sysfs_type;
 
 # Rild
 type rild_file, file_type, vendor_file_type;
