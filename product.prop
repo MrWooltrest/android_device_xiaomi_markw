@@ -32,11 +32,3 @@ ro.bpf.kver_override=5.10.239
 
 # IMS
 ro.telephony.block_binder_thread_on_incoming_calls=false
-
-# LMKD
-ro.lmk.psi_partial_stall_ms=100
-ro.lmk.psi_complete_stall_ms=700
-ro.lmk.thrashing_limit=70
-ro.lmk.thrashing_limit_decay=30
-ro.lmk.swap_util_max=100
-ro.lmk.swap_free_low_percentage=15
